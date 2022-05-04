@@ -24,7 +24,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class Réservation {
 	@Id
-	private String codeRes;
+	private Long codeRes;
 	@NonNull
 	private Date dateReservation;
 	@NonNull
@@ -44,7 +44,7 @@ public class Réservation {
 	
 	@ManyToOne
 	@JoinColumn(name="id_vehicule")
-	private véhicule véhicule;
+	private Véhicule véhicule;
 	
 
 }

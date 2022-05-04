@@ -26,7 +26,7 @@ import lombok.RequiredArgsConstructor;
 public class Véhicule {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private String id_vehicule;
+	private Long id_vehicule;
 	@NonNull
 	private String numCarteGrise;
 	private String typeImmatriculation;
